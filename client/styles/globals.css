@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.MuiDrawer-paper {
+  width: 30% !important;
+}
+.video-player-container video {
+  border-radius: 5px;
+}
