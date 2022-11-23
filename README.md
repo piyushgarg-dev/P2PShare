@@ -36,4 +36,4 @@ Secure communications and file sharing over WebRTC. P2P Share is a simple web ap
 
 ### Screenshots
 
-![Main Dashboard](https://raw.githubusercontent.com/piyushgarg-dev/P2PShare/main/assets/images/ConnectMeP2P.png?token=GHSAT0AAAAAABV352JU6YWUOVVNCXVAQFDKY34WQZQ)
+![Main Dashboard](https://raw.githubusercontent.com/piyushgarg-dev/P2PShare/main/assets/images/ConnectMeP2P.png)
