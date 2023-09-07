@@ -11,6 +11,7 @@ import {
   signInWithPopup,
   onAuthStateChanged,
   User,
+  signOut,
 } from 'firebase/auth'
 import { auth } from '../firebase'
 
@@ -67,4 +68,12 @@ export const FirebaseProvider: React.FC = (props) => {
       {props.children}
     </FirebaseContext.Provider>
   )
+}
+
+export const handleLogout = async () => {
+  try {
+    await signOut(auth)
+  } catch (error) {
+    console.error('Error signing out:', error)
+  }
 }

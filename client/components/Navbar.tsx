@@ -1,7 +1,12 @@
 import React from 'react'
 import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
 import { SiAirplayaudio } from 'react-icons/si'
-import { useFirebase, FirebaseContext } from 'context/FirebaseContext'
+import {
+  useFirebase,
+  FirebaseContext,
+  handleLogout,
+} from 'context/FirebaseContext'
 import UserAvatar from './UserAvatar'
 import { BsArrowLeftRight } from 'react-icons/bs'
 import { User } from 'types'
@@ -50,16 +55,28 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         </div>
       )}
       {currentUser && (
-        <div className="mx-5 mt-4">
-          <UserAvatar
-            username={
-              currentUser?.displayName || currentUser.email || 'Someone'
-            }
-            src={currentUser?.photoURL || ''}
-            height={40}
-            width={40}
-          />
-        </div>
+        <>
+          <div className="mx-6 mt-4 flex">
+            <UserAvatar
+              username={
+                currentUser?.displayName || currentUser.email || 'Someone'
+              }
+              src={currentUser?.photoURL || ''}
+              height={40}
+              width={40}
+            />
+
+            <Button
+              variant="outlined"
+              color="error"
+              size="small"
+              onClick={() => handleLogout()}
+              className="ml-3"
+            >
+              LogOut
+            </Button>
+          </div>
+        </>
       )}
     </nav>
   )
