@@ -38,11 +38,13 @@ Secure communications and file sharing over WebRTC. P2P Share is a simple web ap
 
 - Clone this repository.
 - CD into client folder.
-- create a new file named ```.env.local```
-- Copy the contents of ```.env.example``` to ```.env.local```
-- Add API keys to ```.env.local``` file such as Firebase API keys and server URL.
+- create a new file named `.env.local`
+- Copy the contents of `.env.example` to `.env.local`
+- Add API keys to `.env.local` file such as Firebase API keys and server URL.
 - yarn install in both client and server folder
 
 ### Screenshots
 
 ![Main Dashboard](https://raw.githubusercontent.com/piyushgarg-dev/P2PShare/main/assets/images/ConnectMeP2P.png)
+
+<!-- My Contribution... -->
