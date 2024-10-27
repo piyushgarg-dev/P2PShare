@@ -1,6 +1,7 @@
 # P2P Share
 
-Secure communications and file sharing over WebRTC. P2P Share is a simple web application that enables two peers to connect to each other over UDP protocol and share files, video call etc securely and quickly.
+Secure communications and file sharing over WebRTC. P2P Share is a simple web application that enables two peers to connect to each other over UDP protocol and share files, video call etc securely and quickly .
+changed by Abhishek namdeo.
 
 ## Project Folder Structure
 
